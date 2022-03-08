@@ -32,7 +32,6 @@ def min_100():
         df = df.reset_index(drop=True)
         
         winner_info = df.sample()
-        print()
         winner_addr = winner_info['delegator-address'].values[0]
         
         current_timestamp = datetime.now().strftime("%Y-%m-%d %H-%M-%S")
